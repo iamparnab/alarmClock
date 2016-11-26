@@ -3,6 +3,7 @@
 ############################### 1. PyQt5         ###############################
 ############################### 2. pygame        ###############################
 ################################################################################
+import os
 def check_for_pip3():
     # now check whether you have
     # pip3 or not
@@ -32,14 +33,22 @@ try:
 except ImportError:
     # pygame is not installed
     # so ...
-    import os
     check_for_pip3()
      # now install pygame
-     os.system("pip3 install pygame")
+     print("#####################################")
+     print("######### Installing pygame #########")
+     print("#####################################")
+    os.system("pip3 install pygame")
     
 try:
-    import pyqt5
+    import PyQt5
 except ImportError:
+     check_for_pip3()
+     # now install pyqt5
+     print("#####################################")
+     print("######### Installing PyQt5 ##########")
+     print("#####################################")
+     os.system("pip3 install pyqt5")
      check_for_pip3()
      # now install pyqt5
      os.system("pip3 install pyqt5")

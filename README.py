@@ -21,7 +21,7 @@ except ImportError:
          
     if len(paths) < 2 : 
         # in this case
-        # you have do not have pip3 installed in your system
+        # you do not have pip3 installed in your system
         # or may be, you have pip3 installed
         # but the path is not set
         # lets, install pip3
@@ -29,5 +29,5 @@ except ImportError:
         # or try 'yum/dnf', 'pacman'
         # based on your distribution
     
-     # now install pygame 
+     # now install pygame
      os.system("pip3 install pygame")

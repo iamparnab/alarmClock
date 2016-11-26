@@ -1,10 +1,9 @@
-try:
-    import pygame
-except ImportError:
-    # pygame is not installed
-    # so ...
-    import os
-    
+################################################################################
+############################### TWO DEPENDENCIES ###############################
+############################### 1. PyQt5         ###############################
+############################### 2. pygame        ###############################
+################################################################################
+def check_for_pip3():
     # now check whether you have
     # pip3 or not
     os.system("whereis pip3 > log")
@@ -13,7 +12,7 @@ except ImportError:
     file = open("./log", "r")
     paths = file.read().strip().split(" ")
     
-    # the standard whereis command outputs
+    # the standard 'whereis' command outputs
     # three things.
     #    1. The name of binary file we are looking for
     #    2. The binary executable file
@@ -25,9 +24,22 @@ except ImportError:
         # or may be, you have pip3 installed
         # but the path is not set
         # lets, install pip3
-        os.system("sudo apt-get install pip3") # for apt-get 
+        os.system("sudo apt-get install python3-pip") # for apt-get 
         # or try 'yum/dnf', 'pacman'
         # based on your distribution
-    
+try:
+    import pygame
+except ImportError:
+    # pygame is not installed
+    # so ...
+    import os
+    check_for_pip3()
      # now install pygame
      os.system("pip3 install pygame")
+    
+try:
+    import pyqt5
+except ImportError:
+     check_for_pip3()
+     # now install pyqt5
+     os.system("pip3 install pyqt5")

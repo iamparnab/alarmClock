@@ -3,7 +3,8 @@
 ################# Configure the script accordingly #############
 ################# And Run that to install the      #############
 ################# DEPENDENCIES!!!!!!!!!            #############
-################# You can find the .deb package    #############
-################# for easy setup with apt-get      #############
-################# package manager!!!!!!!!!!        #############
+################# Or If you are on Debian Linux    #############
+################# and you have apt-get installed   #############
+################# You can use the .deb package     #############
+################# for easy setup       !!!!        #############
 ################################################################

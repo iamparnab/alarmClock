@@ -35,9 +35,9 @@ except ImportError:
     # so ...
     check_for_pip3()
      # now install pygame
-     print("#####################################")
-     print("######### Installing pygame #########")
-     print("#####################################")
+    print("#####################################")
+    print("######### Installing pygame #########")
+    print("#####################################")
     os.system("pip3 install pygame")
     
 try:
